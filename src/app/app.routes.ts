@@ -1,3 +1,10 @@
 import { Routes } from '@angular/router';
+import { LandingPpageComponent } from './landing-ppage/landing-ppage.component';
+import { LoginComponent } from './Authentic/login/login.component';
+import { RegisterloginComponent } from './Authentic/registerlogin/registerlogin.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {path:'',component:LandingPpageComponent},
+    {path:'login',component:LoginComponent},
+    {path:'registerlogin',component:RegisterloginComponent},
+];
