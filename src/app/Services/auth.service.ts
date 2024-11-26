@@ -37,7 +37,7 @@ export class AuthService {
     for (let i = 0; i < this.user.length; i++) {
       if (this.user[i].email === userData.email && this.user[i].password === userData.password) {
         alert(`Welcome ${this.user[i].username}.`);
-        this.router.navigateByUrl('/');
+        this.router.navigateByUrl('/home');
         return;
       }
     }
